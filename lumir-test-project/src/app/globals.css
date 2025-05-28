@@ -1,0 +1,21 @@
+/* 디자인 시스템 스타일 불러오기 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
+@import '../../../node_modules/lumir-design-tokens/dist/css/tokens.css';
+@import '../../../node_modules/lumir-design-components/dist/styles.css';
+
+/* 기본 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* 누락된 Foundation Typography 토큰 추가 */
+:root {
+  --foundation-typography-fontFamily-base: var(--foundation-font-fontFamily-base);
+}
