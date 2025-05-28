@@ -3,11 +3,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true
   },
-  transpilePackages: ['lumir-design-components', 'lumir-design-tokens'],
-  output: 'standalone',
-  experimental: {
-    appDir: true
-  }
+  transpilePackages: ['lumir-design-components', 'lumir-design-tokens']
 };
 
 module.exports = nextConfig; 

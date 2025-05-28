@@ -1,6 +1,15 @@
 {
-  "buildCommand": "cd lumir-test-project && npm install && npm run build",
-  "outputDirectory": "lumir-test-project/.next/standalone",
-  "installCommand": "cd lumir-test-project && npm install",
-  "framework": "nextjs"
+  "version": 2,
+  "builds": [
+    {
+      "src": "lumir-test-project/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "lumir-test-project/$1"
+    }
+  ]
 } 
