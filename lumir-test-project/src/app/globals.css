@@ -1,7 +1,7 @@
 /* 디자인 시스템 스타일 불러오기 */
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css');
-@import '../../../node_modules/lumir-design-tokens/dist/css/tokens.css';
-@import '../../../node_modules/lumir-design-components/dist/styles.css';
+@import 'lumir-design-tokens/css';
+@import 'lumir-design-components/styles';
 
 /* 기본 리셋 */
 * {

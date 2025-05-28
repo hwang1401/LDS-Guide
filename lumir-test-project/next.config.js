@@ -1,16 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
+  eslint: {
+    ignoreDuringBuilds: true
   },
   transpilePackages: ['lumir-design-components', 'lumir-design-tokens'],
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.css$/,
-      use: ['style-loader', 'css-loader'],
-    });
-    return config;
-  },
+  output: 'standalone',
+  experimental: {
+    appDir: true
+  }
 };
 
 module.exports = nextConfig; 

@@ -1,6 +1,6 @@
 {
   "buildCommand": "cd lumir-test-project && npm install && npm run build",
-  "outputDirectory": "lumir-test-project/.next",
+  "outputDirectory": "lumir-test-project/.next/standalone",
   "installCommand": "cd lumir-test-project && npm install",
-  "cleanUrls": true
+  "framework": "nextjs"
 } 
